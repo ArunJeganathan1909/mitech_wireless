@@ -1,0 +1,568 @@
+body {
+  margin: 0;
+  background-color: #ebebebde;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ebebebde;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0 5%;
+  background: #fff;
+}
+
+.header-supliment {
+  display: flex;
+  padding: 0.5rem 5%;
+  background-color: #ebebebde;
+}
+
+.header-head {
+  display: flex;
+  padding: 1rem;
+}
+
+.header-headContent {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 40%;
+}
+
+.header-logo a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.header-logo img {
+  width: 100px;
+  height: 40px;
+}
+
+.header-head-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+  gap: 1.75rem;
+}
+
+.hhcc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#barline {
+  display: none;
+}
+
+.help:hover,
+.hhcc:hover .country-description {
+  text-decoration: underline;
+}
+
+.help {
+  line-height: 1.5;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.country-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.country-img img {
+  height: 18px;
+}
+
+.country-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.country-description {
+  font-size: 1rem;
+}
+
+.row-devider {
+  background-color: black;
+  height: 0.8rem;
+  margin-bottom: 2px;
+  width: 1px;
+}
+
+.signin,
+.signout {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-btn {
+  cursor: pointer;
+  border: 2px solid #ec2127;
+  color: #ec2127;
+  background-color: #fff;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 0.3rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signout-btn {
+  cursor: pointer;
+  color: rgba(13, 36, 38, var(--text-opacity));
+  font-weight: 700;
+  background-color: #ec2127;
+  border: 2px solid #ec2127;
+  border-radius: 10px;
+  padding: 0.3rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects */
+.signin-btn:hover {
+  background-color: #e9e8e8;
+}
+
+.signout-btn:hover {
+  background-color: #b8080e;
+}
+
+.signin-btn span,
+.signout-btn span {
+  font-size: 1rem;
+  line-height: 1;
+  padding-top: 2px;
+}
+
+.signin-btn span:hover,
+.signout-btn span:hover {
+  text-decoration: none;
+}
+
+.signout-btn::after,
+.signout-btn::before {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+.header-navbar {
+  display: flex;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-navbar-nav a {
+  font-size: 0.95rem;
+  color: #832c2f;
+  text-decoration: none;
+}
+
+.header-navbar-nav a:hover {
+  text-decoration: underline;
+}
+
+.header-supliment-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60%;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.hscc {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.hscc span, .hscc .right-arow {
+  color: #555555c7;
+  font-size: 0.8rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+
+.hscc i {
+  color: #ec2127;
+  font-size: 22px;
+}
+
+.header-supliment-review {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  padding: 0 1rem;
+}
+
+.header-supliment-review a {
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+}
+
+.hsrc {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hsrc span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: black;
+}
+
+.hsrc i {
+  color: #ec2127;
+  font-size: 0.8rem;
+}
+
+.hsrc .reviews {
+  font-size: 0.8rem;
+  font-weight: 520;
+}
+
+#trustpilot {
+  gap: 0;
+}
+
+.hsrc .trustpilot {
+  font-size: 0.8rem;
+}
+
+.page-label {
+  width: 100%;
+  background-color: #460d0f;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 20rem;
+  margin-bottom: 120px;
+}
+
+.page-label-container {
+  max-width: 600px;
+  height: 20rem;
+  margin: 0 auto;
+  position: relative; /* Ensures the z-index works */
+  z-index: 10; /* Higher value makes it appear above other elements */
+  top: 15%;
+}
+
+.page-label-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.plcc {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.plcl {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #e3e8e8;
+  border-radius: 10px;
+}
+
+.plcl form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+.country-header {
+  display: flex;
+  font-size: 22px;
+}
+
+.country-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.country-selected {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.country-selected-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.country-flag {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.country-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.country-arrow {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.country-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: none;
+  width: 100%;
+}
+
+.country-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.country-options li {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.country-options li:hover {
+  background-color: #f0f0f0;
+}
+
+.country-dropdown:hover .country-options {
+  display: block;
+}
+
+.plcl button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ec2127;
+  color: rgba(13, 36, 38, var(--text-opacity));
+  cursor: pointer;
+  padding: 15px;
+  margin: 0 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.plcl button:hover {
+  background-color: #b8080e;
+}
+@media (max-width: 920px) {
+  .header-navbar {
+    display: none;
+  }
+
+  .header-supliment {
+    width: 100%;
+  }
+
+  .header-supliment-review {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header-supliment-content {
+    display: none;
+  }
+
+  #needHelp,
+  #signUp {
+    display: none;
+  }
+
+  #barline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .header-logo{
+    width: 50%;
+  }
+
+  .header-logo a {
+    font-size: 18px;
+  }
+
+  
+
+  .signin-btn, .signout-btn{
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {  
+
+  .header-head-content {
+    gap: 1rem;
+  }
+
+  .country-img img {
+    height: 16px;
+  }
+
+  .country-description {
+    font-size: 1rem;
+  }
+
+  .row-devider {
+    height: 0.75rem;
+  }
+
+  #needHelp,
+  #signUp {
+    display: none;
+  }
+
+  #barline {
+    font-size: 18px;
+  }
+
+  .header-head {
+    padding: 1rem 0;
+  }
+
+  .header-logo img {
+    height: 30px;
+    width: 80px;
+  }
+
+  .header-logo a {
+    font-size: 12px;
+  }
+
+  .plcc {
+    font-size: 2rem;
+  }
+
+  .page-label {
+    margin-bottom: 100px;
+  }
+
+  .page-label-container {
+    max-width: 80%;
+  }
+
+  .country-header {
+    font-size: 20px;
+  }
+
+  .plcl button {
+    font-size: 16px;
+  }
+
+  .country-selected-content {
+    gap: 15px;
+  }
+
+  .country-flag {
+    height: 18px;
+  }
+
+  .country-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px){
+  #review, #trustpilot{
+    display: none;
+  }
+}
+
+@media (max-width: 390px){
+  .plcc{
+    font-size: 1.5rem;
+  }
+  .page-label{
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 310px){
+  .page-label{
+    margin-bottom: 120px;
+  }
+}
