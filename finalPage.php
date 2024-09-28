@@ -271,8 +271,121 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="final-page-details">
+        <div class="fpd-content">
+            <div class="fpdc-header">
+                <i class="ri-route-fill"></i>
+                <div class="fpdch-head">
+                    <h3>Buy Lycamobile USA plans online</h3>
+                </div>
+            </div>
+            <div class="fpdc-content">
+                <div class="fpdcc-head">
+                    <span>About Lycamobile USA</span>
+                </div>
+                <div class="fpdcc-content">
+                    <p>Purchase your Lycamobile recharge online at Recharge.com. Forget about running out of cellphone data or call credit. Simply choose the Lycamobile USA Pay As You Go credit amount you desire.</p>
+                    <ol>
+                        <li>
+                            <p>Choose your desired top-up amount.</p>
+                        </li>
+                        <li>
+                            <p>Enter your correct phone number and email address. Double-check your phone number because we will use the phone number to send you your top-up.</p>
+                        </li>
+                        <li>
+                            <p>Complete the payment for your Lycamobile recharge plan and you'll receive your new credit on your mobile phone in around 30 seconds.</p>
+                        </li>
+                    </ol>
+                    <p>Tip: check out the popular Lycamobile data plans, ranging from 2Gb to 7Gb, operating at 4G LTE speeds. These plans offer a great way to call, browse and text at an affordable monthly rate. Still running out of credit? Switch to a larger plan, or simply buy some additional Lycamobile credit online.</p>
+                </div>
+            </div>
+        </div>
+        <div class="fpd-content">
+            <div class="fpdc-header">
+                <i class="ri-route-fill"></i>
+                <div class="fpdch-head">
+                    <h3>Frequently Asked Questions</h3>
+                </div>
+            </div>
+            <div class="fpdc-content">
+                <div class="fpdcc-head" id="faq1-head">
+                    <span>How to recharge Lycamobile online?</span>
+                    <i class="ri-add-line" id="faq1-add"></i>
+                    <i class="ri-subtract-line" id="faq1-subtract" style="display: none;"></i>
+                </div>
+                <div class="fpdcc-content" id="faq1-content" style="display: none;">
+                    <p>Whether you are inside the US or abroad, Recharge.com can promptly top up your phone with a Lycamobile top-up...</p>
+                    <ol>
+                        <li>
+                            <p>Choose your Lycamobile credit amount and the quantity.</p>
+                        </li>
+                        <li>
+                            <p>Complete the required fields, including the phone number and email address.</p>
+                        </li>
+                        <li>
+                            <p>Pay for your order and instantly get a Lycamobile recharge sent to your cell phone.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
 
+            <div class="fpdc-content">
+                <div class="fpdcc-head" id="faq2-head">
+                    <span>What is Lycamobile Unlimited?</span>
+                    <i class="ri-add-line" id="faq2-add"></i>
+                    <i class="ri-subtract-line" id="faq2-subtract" style="display: none;"></i>
+                </div>
+                <div class="fpdcc-content" id="faq2-content" style="display: none;">
+                    <p>The Lycamobile Unlimited Plans are valid for 30 days.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get all the FAQ headers
+        const faqHeaders = document.querySelectorAll('.fpdcc-head');
+
+        faqHeaders.forEach(function(header) {
+            // Add click event listener to each header
+            header.addEventListener('click', function() {
+                const contentId = this.id.replace('-head', '-content');
+                const addIconId = this.id.replace('-head', '-add');
+                const subtractIconId = this.id.replace('-head', '-subtract');
+
+                const content = document.getElementById(contentId);
+                const addIcon = document.getElementById(addIconId);
+                const subtractIcon = document.getElementById(subtractIconId);
+
+                // Toggle the content display
+                if (content.style.display === "none") {
+                    content.style.display = "flex";
+                    addIcon.style.display = "none";
+                    subtractIcon.style.display = "inline";
+                } else {
+                    content.style.display = "none";
+                    addIcon.style.display = "inline";
+                    subtractIcon.style.display = "none";
+                }
+            });
+        });
+    });
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        // Select all elements with the class 'brdcf-buy'
+        const buyButtons = document.querySelectorAll('.brdcf-buy');
+
+        buyButtons.forEach(function(button) {
+            // Add click event listener to each button
+            button.addEventListener('click', function() {
+                // Redirect to checkout.php
+                window.location.href = 'checkout.php';
+            });
+        });
+    });
+</script>
