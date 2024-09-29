@@ -142,14 +142,24 @@
     </div>
 </div>
 
+<?php include 'footer.php'; ?>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Check if the current page is checkout.php
         if (window.location.pathname.includes('checkout.php')) {
+            // Hide the specified classes
             document.querySelector('.header-head-content').style.display = 'none';
             document.querySelector('.header-navbar').style.display = 'none';
+            document.querySelector('.footer-header').style.display = 'none';
+            document.querySelector('.footer-foot').style.display = 'none';
+            document.querySelector('.fth-normal').style.display = 'none';
+
+            // Show the fth-checkout class
+            document.querySelector('.fth-checkout').style.display = 'flex';
         }
     });
+
 
     document.addEventListener('DOMContentLoaded', function() {
         const emailInput = document.getElementById('email');

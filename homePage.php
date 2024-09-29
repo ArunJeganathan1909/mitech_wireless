@@ -5,7 +5,7 @@
 
     <div class="home-page">
         <div class="page">
-            
+
         </div>
         <div class="header-supliment">
             <div class="header-supliment-content">
@@ -238,6 +238,8 @@
     </footer>
     </div>
 
+    <?php include 'footer.php'; ?>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Get all "Read more" and "Show less" buttons
@@ -265,7 +267,7 @@
         });
     </script>
 
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

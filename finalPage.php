@@ -346,6 +346,8 @@
     </div>
 </div>
 
+<?php include 'footer.php'; ?>
+
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         // Get all the FAQ headers
@@ -375,7 +377,7 @@
             });
         });
     });
-    
+
     document.addEventListener("DOMContentLoaded", function() {
         // Select all elements with the class 'brdcf-buy'
         const buyButtons = document.querySelectorAll('.brdcf-buy');

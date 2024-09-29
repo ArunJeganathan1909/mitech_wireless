@@ -1,4 +1,5 @@
 <?php include 'header.php'; ?>
+
 <div class="mobile-top-up">
     <div class="header-supliment">
         <div class="header-supliment-content" style="gap: 0.5rem;">
@@ -250,6 +251,8 @@
     </div>
 
 </div>
+
+<?php include 'footer.php'; ?>
 
 <script>
     // Get the modal
