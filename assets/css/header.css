@@ -125,7 +125,7 @@ body {
 }
 
 .signin,
-.signout {
+.signup {
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -143,7 +143,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.signout-btn {
+.signup-btn {
   cursor: pointer;
   color: rgba(13, 36, 38, var(--text-opacity));
   font-weight: 700;
@@ -159,24 +159,24 @@ body {
   background-color: #e9e8e8;
 }
 
-.signout-btn:hover {
+.signup-btn:hover {
   background-color: #b8080e;
 }
 
 .signin-btn span,
-.signout-btn span {
+.signup-btn span {
   font-size: 1rem;
   line-height: 1;
   padding-top: 2px;
 }
 
 .signin-btn span:hover,
-.signout-btn span:hover {
+.signup-btn span:hover {
   text-decoration: none;
 }
 
-.signout-btn::after,
-.signout-btn::before {
+.signup-btn::after,
+.signup-btn::before {
   box-sizing: border-box;
   border: 0 solid;
 }
@@ -216,7 +216,8 @@ body {
   gap: 8px;
 }
 
-.hscc span, .hscc .right-arow {
+.hscc span,
+.hscc .right-arow {
   color: #555555c7;
   font-size: 0.8rem;
   font-weight: 800;
@@ -364,17 +365,25 @@ body {
 
 .country-flag {
   height: 20px;
-  margin-right: 10px;
 }
 
 .country-name {
   font-size: 18px;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
-.country-arrow {
-  margin-left: 10px;
-  font-size: 20px;
+.country-name input {
+  border: none;
+  font-weight: 600;
+  width: 100%;
+}
+
+.country-name input {
+  border: none;
+  outline: none;
 }
 
 .country-options {
@@ -428,6 +437,333 @@ body {
 .plcl button:hover {
   background-color: #b8080e;
 }
+
+.login .modal-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#login .modal-content {
+  min-height: 80vh;
+}
+
+.login .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.login .modal-header button {
+  font-size: 0.7rem;
+}
+
+.login-signup,
+.login-signin,
+.email-signnp,
+.email-signin,
+.reset-password {
+  padding: 1rem 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 0;
+  height: 100%;
+  height: 100%;
+  justify-content: space-between; /* This ensures the footer stays at the bottom */
+  flex-grow: 1;
+}
+
+.email-signnp,
+.reset-password,
+.email-signin {
+  justify-content: flex-start;
+}
+
+.ls-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ls-header,
+.es-header,
+.rp-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.ls-body,
+#register-form,
+#signin-form,
+#reset-password-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.lsb-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.lsbc-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+  border: 1px solid #ec2127;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.lsbc-card:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: #b8080e;
+}
+.lsbc-img {
+  display: flex;
+  align-items: center;
+}
+
+.lsbc-img img {
+  width: 40px;
+}
+
+.lsbc-content {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.lsbc-card:hover .lsbc-content {
+  color: #b8080e;
+}
+
+.lsb-quate {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #999;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.lsb-quate p {
+  margin: 0;
+}
+
+.lsb-quate a {
+  color: #999;
+}
+
+.lsb-quate a:hover {
+  text-decoration: underline;
+  color: #b8080e;
+}
+
+.ls-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.sigin-direct,
+.signup-direct {
+  font-weight: 700;
+  color: #3392ff;
+  cursor: pointer;
+}
+
+.sigin-direct:hover,
+.signup-direct:hover {
+  color: #b8080e;
+  text-decoration: underline;
+}
+
+.form-group.email-group,
+.form-reset-group.email-group {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.form-group.password-group {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  gap: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.form-group.email-group.incorrect,
+.form-group.password-group.incorrect,
+.form-reset-group.email-group.incorrect {
+  border: 1px solid #b8080e;
+}
+
+.form-group.email-group.correct,
+.form-group.password-group.correct,
+.form-reset-group.email-group.correct {
+  border: 1px solid #05e27e;
+}
+
+.fg-password {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dont-forgot {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.remember-checkbox {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.remember-checkbox:checked {
+  background-color: #b8080e;
+  border: 2px solid #b8080e;
+}
+
+.remember-label {
+  display: flex;
+  font-size: 0.8rem;
+  color: #999;
+  font-weight: 700;
+}
+
+.remember-checkbox:checked + .remember-label {
+  color: #b8080e;
+}
+
+.email-label,
+.password-label {
+  display: none;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.form-group.email-group input,
+.fg-password input,
+.form-reset-group.email-group input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  border: none;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+
+.form-group.email-group input:focus,
+.fg-password input:focus,
+.form-reset-group.email-group input {
+  border: none;
+  outline: none;
+}
+
+.form-pasword-quate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+}
+
+.reset-password-quate{
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.register,
+.signinToPage,
+.reset-password-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #ccc;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.register:hover,
+.signinToPage:hover,
+.reset-password-button:hover {
+  background: #b8080e;
+  font-weight: 700;
+}
+
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #3392ff;
+}
+
+.navigate span {
+  cursor: pointer;
+}
+
+.navigate span:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.email-error-signup,
+.password-error-signup,
+.email-error-signin,
+.password-error-signin,
+.email-error-reset {
+  display: none;
+  font-size: 0.8rem;
+  color: #b8080e;
+  margin-top: -18px;
+  margin-left: 10px;
+}
+
 @media (max-width: 920px) {
   .header-navbar {
     display: none;
@@ -458,7 +794,7 @@ body {
     font-size: 20px;
   }
 
-  .header-logo{
+  .header-logo {
     width: 50%;
   }
 
@@ -466,15 +802,13 @@ body {
     font-size: 18px;
   }
 
-  
-
-  .signin-btn, .signout-btn{
+  .signin-btn,
+  .signup-btn {
     width: 100%;
   }
 }
 
-@media (max-width: 680px) {  
-
+@media (max-width: 680px) {
   .header-head-content {
     gap: 1rem;
   }
@@ -534,7 +868,7 @@ body {
   }
 
   .country-selected-content {
-    gap: 15px;
+    gap: 10px;
   }
 
   .country-flag {
@@ -546,23 +880,42 @@ body {
   }
 }
 
-@media (max-width: 480px){
-  #review, #trustpilot{
+@media (max-width: 480px) {
+  #review,
+  #trustpilot {
     display: none;
+  }
+
+  #login .modal-dialog {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: contents;
+  }
+
+  #login .modal-content {
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .login-signup,
+  .login-signin {
+    height: 100%;
+    justify-content: space-between;
   }
 }
 
-@media (max-width: 390px){
-  .plcc{
+@media (max-width: 390px) {
+  .plcc {
     font-size: 1.5rem;
   }
-  .page-label{
+  .page-label {
     margin-bottom: 80px;
   }
 }
 
-@media (max-width: 310px){
-  .page-label{
+@media (max-width: 310px) {
+  .page-label {
     margin-bottom: 120px;
   }
 }

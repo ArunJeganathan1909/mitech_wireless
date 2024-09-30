@@ -3,7 +3,7 @@ body {
   background-color: #ebebebde;
 }
 
-.home-page{
+.home-page {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -128,6 +128,74 @@ body {
   margin: 0 1rem;
   background-color: #fff;
   border-radius: 10px;
+}
+
+.rac {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.rac-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+}
+
+.rac-img img{
+  width: 100%;
+}
+
+.rac-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+  width: 60%;
+}
+
+.racc-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.racc-content{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  gap: 5px;
+}
+
+.racc-content p{
+  margin: 0;
+  font-size: 0.9rem;
+  color: #999;
+  font-weight: 500;
+}
+
+.learn-more{
+  padding: 5px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #ec2127;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.learn-more:hover{
+  background: #b8080e;
 }
 
 .read-heading {
@@ -286,6 +354,19 @@ body {
   .mobile-content {
     grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
   }
+
+  .rac{
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .racc-header{
+    font-size: 1.6rem;
+  }
+
+  .racc-content p{
+    font-size: 0.8rem;
+  }
 }
 
 @media (max-width: 680px) {
@@ -304,10 +385,31 @@ body {
   .read-details-container {
     -webkit-line-clamp: 5;
   }
+
+  .rac{
+    flex-direction: column;
+  }
+
+  .rac-img{
+    width: 70%;
+  }
+
+  .rac-content{
+    width: 90%;
+  }
+
+  .racc-header{
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 480px) {
   .pupular-content {
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  .racc-header{
+    font-size: 1.2rem;
+    color: #3392ff;
   }
 }

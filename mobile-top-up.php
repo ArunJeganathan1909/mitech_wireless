@@ -73,20 +73,12 @@
         <div class="mtuc-header">
             <span>Step 1: Select which country this product will be used in</span>
         </div>
-        <div class="mtuc-label">
-            <div class="mtucl-country">
-                <img src="assets/img/usa.jpeg" alt="usa">
-                <span>United States</span>
-            </div>
-            <div class="mtucl-arrow">
-                <span><i class="ri-arrow-right-line"></i></span>
-            </div>
-        </div>
         <div class="mtuc-mobile">
-            <div class="mtuc-countryCode">
-                <span>+1</span>
+            <div class="mtuc-countryimg">
+                <img src="assets/img/usa.jpeg" alt="">
             </div>
             <div class="mtuc-number">
+                <span>+1</span>
                 <input type="text" id="phoneNumber" placeholder="Phone Number">
             </div>
         </div>
@@ -97,36 +89,6 @@
             <div class="mobile-content">
                 <div class="mobile-content-card">
                     <a href="finalPage.php">
-                        <img src="assets/img/lycamobile.png" alt="">
-                        <p>Lycamobile</p>
-                    </a>
-                </div>
-                <div class="mobile-content-card">
-                    <a href="">
-                        <img src="assets/img/tmobile.png" alt="">
-                        <p>T-Mobile</p>
-                    </a>
-                </div>
-                <div class="mobile-content-card">
-                    <a href="">
-                        <img src="assets/img/lycamobile.png" alt="">
-                        <p>Lycamobile</p>
-                    </a>
-                </div>
-                <div class="mobile-content-card">
-                    <a href="">
-                        <img src="assets/img/lycamobile.png" alt="">
-                        <p>Lycamobile</p>
-                    </a>
-                </div>
-                <div class="mobile-content-card">
-                    <a href="">
-                        <img src="assets/img/lycamobile.png" alt="">
-                        <p>Lycamobile</p>
-                    </a>
-                </div>
-                <div class="mobile-content-card">
-                    <a href="">
                         <img src="assets/img/lycamobile.png" alt="">
                         <p>Lycamobile</p>
                     </a>

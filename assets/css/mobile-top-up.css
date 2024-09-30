@@ -67,7 +67,7 @@
   background: #fff;
 }
 
-.mtuc-search{
+.mtuc-search {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,11 +80,11 @@
   color: #ebebebde;
 }
 
-.mtuc-search:hover{
+.mtuc-search:hover {
   background: #b8080e;
 }
 
-.mtu-container .mobile-container{
+.mtu-container .mobile-container {
   margin-top: 1rem;
 }
 
@@ -99,6 +99,24 @@
   padding: 0.5rem 0.6rem;
   cursor: pointer;
   background: #fff;
+  font-size: 1rem;
+}
+
+.mtuc-countryimg {
+  display: flex;
+  align-items: center;
+}
+
+.mtuc-countryimg img {
+  width: 2rem;
+  border-radius: 4px;
+}
+
+.mtuc-number {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
   font-size: 1rem;
 }
 
@@ -388,7 +406,7 @@
     width: 100%;
   }
 
-  .mobile-container{
+  .mobile-container {
     padding: 0;
   }
 }

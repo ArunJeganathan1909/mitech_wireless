@@ -4,9 +4,6 @@
     <?php include 'header.php'; ?>
 
     <div class="home-page">
-        <div class="page">
-
-        </div>
         <div class="header-supliment">
             <div class="header-supliment-content">
                 <div class="hscc">
@@ -61,26 +58,11 @@
                                     <div class="country-selected">
                                         <div class="country-selected-content">
                                             <img src="assets/img/usa.jpeg" alt="United States" class="country-flag">
-                                            <span class="country-name">United States</span>
+                                            <div class="country-name">
+                                                <span>+1</span>
+                                                <input type="text" id="phoneNumber" placeholder="Phone Number">
+                                            </div>
                                         </div>
-                                        <div class="country-selected-icon"><i
-                                                class="ri-arrow-down-s-line country-arrow"></i></div>
-                                    </div>
-                                    <div class="country-options">
-                                        <ul>
-                                            <li>
-                                                <img src="assets/img/usa.jpeg" alt="United States" class="country-flag">
-                                                <span class="country-name">United States</span>
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/canada.jpeg" alt="Canada" class="country-flag">
-                                                <span class="country-name">Canada</span>
-                                            </li>
-                                            <li>
-                                                <img src="assets/img/mexico.jpeg" alt="Mexico" class="country-flag">
-                                                <span class="country-name">Mexico</span>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -101,24 +83,6 @@
                                 <p>Lycamobile</p>
                             </a>
                         </div>
-                        <div class="pupular-content-card">
-                            <a href="">
-                                <img src="assets/img/googleplay.png" alt="">
-                                <p>Google Play</p>
-                            </a>
-                        </div>
-                        <div class="pupular-content-card">
-                            <a href="">
-                                <img src="assets/img/visa.png" alt="">
-                                <p>Visa</p>
-                            </a>
-                        </div>
-                        <div class="pupular-content-card">
-                            <a href="">
-                                <img src="assets/img/tinder.png" alt="">
-                                <p>Tinder</p>
-                            </a>
-                        </div>
                     </div>
                     <div class="pupular-ad"></div>
                 </div>
@@ -129,36 +93,6 @@
                 <div class="mobile-head">Mobile top-up</div>
                 <div class="mobile-container">
                     <div class="mobile-content">
-                        <div class="mobile-content-card">
-                            <a href="">
-                                <img src="assets/img/lycamobile.png" alt="">
-                                <p>Lycamobile</p>
-                            </a>
-                        </div>
-                        <div class="mobile-content-card">
-                            <a href="">
-                                <img src="assets/img/tmobile.png" alt="">
-                                <p>T-Mobile</p>
-                            </a>
-                        </div>
-                        <div class="mobile-content-card">
-                            <a href="">
-                                <img src="assets/img/lycamobile.png" alt="">
-                                <p>Lycamobile</p>
-                            </a>
-                        </div>
-                        <div class="mobile-content-card">
-                            <a href="">
-                                <img src="assets/img/lycamobile.png" alt="">
-                                <p>Lycamobile</p>
-                            </a>
-                        </div>
-                        <div class="mobile-content-card">
-                            <a href="">
-                                <img src="assets/img/lycamobile.png" alt="">
-                                <p>Lycamobile</p>
-                            </a>
-                        </div>
                         <div class="mobile-content-card">
                             <a href="">
                                 <img src="assets/img/lycamobile.png" alt="">
@@ -230,12 +164,24 @@
                     <a href="javascript:void(0)" class="readMoreBtn">Read more</a>
                     <a href="javascript:void(0)" class="showLessBtn" style="display: none;">Show less</a>
                 </div>
+
+                <div class="rac">
+                    <div class="rac-img">
+                        <img src="assets/img/images.jpeg" alt="">
+                    </div>
+                    <div class="rac-content">
+                        <div class="racc-header">Make the Most of Your Online Recharge</div>
+                        <div class="racc-content">
+                            <p>The prepaid products on Recharge.com can help you save money, keep your privacy online,
+                                and support your favorite people.</p>
+                            <p>Want to make the most of your recharge online? Stay up-to-date with our tips for saving
+                                time and money with prepaid products.</p>
+                        </div>
+                        <button class="learn-more">Learn more</button>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <footer>
-
-    </footer>
     </div>
 
     <?php include 'footer.php'; ?>

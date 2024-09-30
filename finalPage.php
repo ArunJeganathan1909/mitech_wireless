@@ -98,29 +98,17 @@
             </div>
         </div>
         <div class="bh-nav">
-            <div class="bhn-nav">
+            <div class="bhn-nav" id="bundle">
                 Bundle
             </div>
-            <div class="bhn-nav">
+            <div class="bhn-nav" id="call-credit">
                 Call credit
-            </div>
-            <div class="bhn-nav">
-                International
             </div>
         </div>
     </div>
     <div class="brand-recharge-details">
         <div class="mtuc-header">
             <span>Step 1: Select which country this product will be used in</span>
-        </div>
-        <div class="mtuc-label" id="step1">
-            <div class="mtucl-country">
-                <img src="assets/img/usa.jpeg" alt="usa">
-                <span>United States</span>
-            </div>
-            <div class="mtucl-arrow">
-                <span><i class="ri-arrow-right-line"></i></span>
-            </div>
         </div>
         <div class="mtuc-mobile">
             <div class="brd-mobile">
@@ -137,7 +125,7 @@
         <div class="mtuc-header" id="step2">
             <span>Step 2: Choose a value</span>
         </div>
-        <div class="brd-container">
+        <div class="brd-container" id="bundle-container">
             <div class="brd-content">
                 <div class="brd-content-card">
                     <div class="brdc-content">
@@ -232,6 +220,43 @@
                     <div class="brdc-footer">
                         <div class="brdcf-money">
                             <span>USD 29.00</span>
+                        </div>
+                        <div class="brdcf-buy">
+                            <span>Buy now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brd-container" id="call-credit-container">
+            <div class="brd-content">
+                <div class="brd-content-card">
+                    <div class="brdc-content">
+                        <div class="brdcc-header">
+                            <img src="assets/img/lycamobile.png" alt="">
+                            <span>Lycamobile Unlimited 19 USD</span>
+                        </div>
+                        <div class="brdcc-container">
+                            <p>Instant delivery to phone</p>
+                            <ul>
+                                <li>
+                                    <p>Valid for 30 days</p>
+                                </li>
+                                <li>
+                                    <p>2 GB data on 4G/5G</p>
+                                </li>
+                                <li>
+                                    <p>Unlimited minutes</p>
+                                </li>
+                                <li>
+                                    <p>Unlimited SMS</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="brdc-footer">
+                        <div class="brdcf-money">
+                            <span>USD 19.00</span>
                         </div>
                         <div class="brdcf-buy">
                             <span>Buy now</span>
@@ -389,5 +414,35 @@
                 window.location.href = 'checkout.php';
             });
         });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        const bundleNav = document.getElementById('bundle');
+        const callCreditNav = document.getElementById('call-credit');
+        const bundleContainer = document.getElementById('bundle-container');
+        const callCreditContainer = document.getElementById('call-credit-container');
+
+        // Function to remove active class and hide all containers
+        function resetContainers() {
+            document.querySelectorAll('.bhn-nav').forEach(nav => nav.classList.remove('active'));
+            bundleContainer.style.display = 'none';
+            callCreditContainer.style.display = 'none';
+        }
+
+        // Event listener for Bundle tab
+        bundleNav.addEventListener('click', function() {
+            resetContainers(); 
+            bundleNav.classList.add('active'); 
+            bundleContainer.style.display = 'flex'; 
+        });
+
+        // Event listener for Call Credit tab
+        callCreditNav.addEventListener('click', function() {
+            resetContainers(); 
+            callCreditNav.classList.add('active'); 
+            callCreditContainer.style.display = 'flex'; 
+        });
+
+        // Initially, show the bundle tab content
+        bundleNav.click();
     });
 </script>
