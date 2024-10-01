@@ -80,18 +80,6 @@
                         <div class="ffccc-content">
                             <a href="">Mobile top-up</a>
                         </div>
-                        <div class="ffccc-content">
-                            <a href="">Entertainment</a>
-                        </div>
-                        <div class="ffccc-content">
-                            <a href="">Shopping</a>
-                        </div>
-                        <div class="ffccc-content">
-                            <a href="">Gaming</a>
-                        </div>
-                        <div class="ffccc-content">
-                            <a href="">Payment cards</a>
-                        </div>
                     </div>
                 </div>
             </div>

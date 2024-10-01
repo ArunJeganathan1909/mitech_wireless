@@ -67,16 +67,6 @@
                         Mobile top-up
                     </a>
                 </div>
-                <div class="header-navbar-nav">
-                    <a href="">
-                        Entertainment
-                    </a>
-                </div>
-                <div class="header-navbar-nav">
-                    <a href="">
-                        Shopping
-                    </a>
-                </div>
             </div>
         </div>
     </header>
@@ -95,18 +85,6 @@
                                 <a href="mobile-top-up.php">
                                     <span><i class="ri-file-user-fill"></i></span>
                                     <span>Mobile top-up</span>
-                                </a>
-                            </div>
-                            <div class="hnm-navbar-nav">
-                                <a href="">
-                                    <span><i class="ri-hotel-fill"></i></span>
-                                    <span>Entertainment</span>
-                                </a>
-                            </div>
-                            <div class="hnm-navbar-nav">
-                                <a href="">
-                                    <span><i class="ri-shopping-bag-fill"></i></span>
-                                    <span>Shopping</span>
                                 </a>
                             </div>
                         </div>
