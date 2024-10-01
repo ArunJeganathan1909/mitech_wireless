@@ -134,7 +134,7 @@
                             <span>Lycamobile Unlimited 19 USD</span>
                         </div>
                         <div class="brdcc-container">
-                            <p>Instant delivery to phone</p>
+                            <p>Instant delivery to phone (Bundle)</p>
                             <ul>
                                 <li>
                                     <p>Valid for 30 days</p>
@@ -154,72 +154,6 @@
                     <div class="brdc-footer">
                         <div class="brdcf-money">
                             <span>USD 19.00</span>
-                        </div>
-                        <div class="brdcf-buy">
-                            <span>Buy now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="brd-content-card">
-                    <div class="brdc-content">
-                        <div class="brdcc-header">
-                            <img src="assets/img/lycamobile.png" alt="">
-                            <span>Lycamobile Unlimited 23 USD</span>
-                        </div>
-                        <div class="brdcc-container">
-                            <p>Instant delivery to phone</p>
-                            <ul>
-                                <li>
-                                    <p>Valid for 30 days</p>
-                                </li>
-                                <li>
-                                    <p>3 GB data on 4G/5G</p>
-                                </li>
-                                <li>
-                                    <p>Unlimited minutes</p>
-                                </li>
-                                <li>
-                                    <p>Unlimited SMS</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="brdc-footer">
-                        <div class="brdcf-money">
-                            <span>USD 23.00</span>
-                        </div>
-                        <div class="brdcf-buy">
-                            <span>Buy now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="brd-content-card">
-                    <div class="brdc-content">
-                        <div class="brdcc-header">
-                            <img src="assets/img/lycamobile.png" alt="">
-                            <span>Lycamobile Unlimited International Plan 29 USD</span>
-                        </div>
-                        <div class="brdcc-container">
-                            <p>Instant delivery to phone</p>
-                            <ul>
-                                <li>
-                                    <p>Valid for 30 days</p>
-                                </li>
-                                <li>
-                                    <p>7 GB data on 4G/5G</p>
-                                </li>
-                                <li>
-                                    <p>Unlimited minutes and SMS</p>
-                                </li>
-                                <li>
-                                    <p>Bonus minutes to Bangladesh, Cambodia, Vietnam, Nigeria</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="brdc-footer">
-                        <div class="brdcf-money">
-                            <span>USD 29.00</span>
                         </div>
                         <div class="brdcf-buy">
                             <span>Buy now</span>
@@ -237,7 +171,7 @@
                             <span>Lycamobile Unlimited 19 USD</span>
                         </div>
                         <div class="brdcc-container">
-                            <p>Instant delivery to phone</p>
+                            <p>Instant delivery to phone (Call credit)</p>
                             <ul>
                                 <li>
                                     <p>Valid for 30 days</p>
@@ -257,39 +191,6 @@
                     <div class="brdc-footer">
                         <div class="brdcf-money">
                             <span>USD 19.00</span>
-                        </div>
-                        <div class="brdcf-buy">
-                            <span>Buy now</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="brd-content-card">
-                    <div class="brdc-content">
-                        <div class="brdcc-header">
-                            <img src="assets/img/lycamobile.png" alt="">
-                            <span>Lycamobile Unlimited 23 USD</span>
-                        </div>
-                        <div class="brdcc-container">
-                            <p>Instant delivery to phone</p>
-                            <ul>
-                                <li>
-                                    <p>Valid for 30 days</p>
-                                </li>
-                                <li>
-                                    <p>3 GB data on 4G/5G</p>
-                                </li>
-                                <li>
-                                    <p>Unlimited minutes</p>
-                                </li>
-                                <li>
-                                    <p>Unlimited SMS</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="brdc-footer">
-                        <div class="brdcf-money">
-                            <span>USD 23.00</span>
                         </div>
                         <div class="brdcf-buy">
                             <span>Buy now</span>
